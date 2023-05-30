@@ -1,0 +1,9 @@
+<h1>create a new restaurant</h1>
+<h2><%= link_to 'show all tasks', tasks_path %></h2>
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
